@@ -1,0 +1,37 @@
+.typewriter::before,
+.typewriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewriter::before {
+  background: white;
+  animation: typewriter 2s steps(14) 1s forwards;
+}
+
+.typewriter::after {
+  width: 0.125em;
+  border-right: 0.1em solid black;
+  animation: 
+    typewriter 2s steps(14) 1s forwards,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
