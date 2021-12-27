@@ -1,0 +1,9 @@
+.inactive {
+  left: 100%;
+  transition: 850ms;
+}
+
+.active {
+  left: 0;
+  transition: 350ms;
+}

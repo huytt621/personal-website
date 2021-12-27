@@ -10,14 +10,14 @@
 
 .typewriter::before {
   background: white;
-  animation: typewriter 2s steps(14) 1s forwards;
+  animation: typewriter 1.75s steps(14) 1s forwards;
 }
 
 .typewriter::after {
   width: 0.125em;
   border-right: 0.1em solid black;
   animation: 
-    typewriter 2s steps(14) 1s forwards,
+    typewriter 1.75s steps(14) 1s forwards,
     blink 0.75s step-end infinite;
 }
 

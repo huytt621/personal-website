@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { 
   BrowserRouter as Router,
   Routes,
@@ -7,13 +7,9 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 
 const App = () => {
-  const [clicked, setClicked] = useState(false)
-
-  const handleClick = () => setClicked(!clicked)
-
   return (
     <Router className='relative'>
-      <Navbar clicked={clicked} handleClick={handleClick} />
+      <Navbar />
       <Hero />
     </Router>
   )
