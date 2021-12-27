@@ -1,13 +1,8 @@
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Navbar.css'
 
-const Navbar = () => {
-  const [showSidebar, setShowSidebar] = useState(false)
-
-  const toggleSidebar = () => setShowSidebar(!showSidebar)
-
+const Navbar = ({ showSidebar, toggleSidebar }) => {
   return (
     <div className='font-mono'>
       <div className='flex justify-between items-center h-16 py-16 px-8 text-lg relative z-10'>
