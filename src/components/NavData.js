@@ -8,10 +8,6 @@ export const NavData = [
     path: '/about',
   },
   {
-    title: 'Resume',
-    path: '/resume',
-  },
-  {
     title: 'Contact',
     path: '/contact',
   },
