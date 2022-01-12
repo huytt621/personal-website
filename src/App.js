@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { 
-  BrowserRouter as Router,
-  Routes,
- } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
 
 const App = () => {
   const [showSidebar, setShowSidebar] = useState(false)
@@ -26,11 +24,15 @@ const App = () => {
   })
 
   return (
-    <Router className='relative'>
+    <div className='absolute h-screen'>
       <Navbar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
-      <Hero />
-    </Router>
+      <Routes>
+        <Route path='/' element={<Hero />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Hero />} />
+      </Routes>
+    </div>
   )
 }
 
-export default App;
+export default App

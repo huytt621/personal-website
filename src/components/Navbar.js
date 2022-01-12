@@ -5,9 +5,9 @@ import './Navbar.css'
 const Navbar = ({ showSidebar, toggleSidebar }) => {
   return (
     <div className='font-mono'>
-      <div className='flex justify-between items-center h-16 py-16 px-8 text-lg relative z-10'>
+      <div className='flex justify-between items-center w-screen h-16 py-16 px-8 text-lg relative z-10'>
         <Link to='/' className='px-8'>
-          Huy Tran
+          HT
         </Link>
         <div
           className='cursor-pointer md:hidden px-3 py-2'
@@ -29,10 +29,13 @@ const Navbar = ({ showSidebar, toggleSidebar }) => {
           </svg>
         </div>
         <div className='md:block hidden'>
-          <Link to='/' className='p-4 hover:bg-slate-100 rounded-md mx-3'>
+          <Link to='/about' className='p-4 hover:bg-slate-100 rounded-md mx-3'>
             About
           </Link>
-          <Link to='/' className='p-4 hover:bg-slate-100 rounded-md mx-3'>
+          <Link
+            to='/contact'
+            className='p-4 hover:bg-slate-100 rounded-md mx-3'
+          >
             Contact
           </Link>
           <a
@@ -70,11 +73,16 @@ const Navbar = ({ showSidebar, toggleSidebar }) => {
         <ul className='text-4xl flex justify-center items-center flex-col'>
           {NavData.map((item, index) => (
             <li key={index} className='flex justify-center items-center p-4'>
-              <Link to={item.path}>{item.title}</Link>
+              <Link to={item.path} onClick={toggleSidebar}>
+                {item.title}
+              </Link>
             </li>
           ))}
           <li className='flex justify-center items-center p-4'>
-            <a href='https://github.com/huytt621/resume/blob/main/resume.pdf?raw=true'>
+            <a
+              href='https://github.com/huytt621/resume/blob/main/resume.pdf?raw=true'
+              onClick={toggleSidebar}
+            >
               Resume
             </a>
           </li>
