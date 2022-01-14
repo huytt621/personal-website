@@ -70,7 +70,7 @@ const Navbar = ({ showSidebar, toggleSidebar }) => {
             />
           </svg>
         </div>
-        <ul className='text-4xl flex justify-center items-center flex-col'>
+        <ul className='text-4xl flex justify-center items-center flex-col bg-white'>
           {NavData.map((item, index) => (
             <li key={index} className='flex justify-center items-center p-4'>
               <Link to={item.path} onClick={toggleSidebar}>

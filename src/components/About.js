@@ -3,7 +3,7 @@ import profilePic from '../resources/profile-pic.png'
 
 const About = () => {
   return (
-    <div className='flex flex-col w-screen lg:flex-row lg:justify-center'>
+    <div className='flex flex-col grow w-screen lg:flex-row lg:justify-center'>
       <div className='flex flex-col justify-center items-center font-mono'>
         <h1 className='font-bold text-4xl my-1'>Huy Tran</h1>
         <h2 className='my-1 text-center'>
@@ -14,9 +14,10 @@ const About = () => {
         <img
           src={profilePic}
           alt='My senior portrait'
-          className='h-1/3 w-1/3 my-10 lg:h-2/3 lg:w-auto animate-bounce-reduced'
+          className='h-auto w-1/3 my-10 lg:h-2/3 lg:w-auto animate-bounce-reduced'
         />
       </div>
+
       <div className='flex flex-col justify-center'>
         <p className='mx-10 mt-10 text-lg w-96 self-center'>
           Hello! I'm currently a second-year student at UC Berkeley, studying
