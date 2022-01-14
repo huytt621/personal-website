@@ -27,13 +27,13 @@ const About = () => {
           track or jumping into sand pits.
         </p>
         <div className='flex justify-center items-center my-8'>
-          <a href='https://github.com/huytt621/'>
+          <a href='https://github.com/huytt621/' target='_blank'>
             <i className='fab fa-github mx-3 fa-2x'></i>
           </a>
-          <a href='https://www.linkedin.com/in/huytt621/'>
+          <a href='https://www.linkedin.com/in/huytt621/' target='_blank'>
             <i className='fab fa-linkedin mx-3 fa-2x'></i>
           </a>
-          <a href='https://www.facebook.com/huytt621/'>
+          <a href='https://www.facebook.com/huytt621/' target='_blank'>
             <i className='fab fa-facebook mx-3 fa-2x'></i>
           </a>
         </div>

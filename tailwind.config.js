@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    colors: {
+      'tokyo-white': '#d5d6db',
+    },
     extend: {
       animation: {
         'bounce-reduced': 'small-bounce 3s infinite linear',
