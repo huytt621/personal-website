@@ -1,7 +1,7 @@
 import { Footer, Navbar } from '../components'
 import {
   About,
-  Explore,
+  Projects,
   Feedback,
   GetStarted,
   Hero,
@@ -17,7 +17,7 @@ const Page = () => (
     <div className='relative'>
       <About />
       <div className='gradient-03 z-0' />
-      <Explore />
+      <Projects />
     </div>
     <div className='relative'>
       <GetStarted />
