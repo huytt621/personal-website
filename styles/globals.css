@@ -11,9 +11,20 @@
 }
 
 .gradient-text {
-  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background: linear-gradient(to right, #439cfb 0%, #f187fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn {
+  background-image: linear-gradient(to right, #439cfb 0%, #f187fb 51%, #439cfb);
+  background-size: 200% auto;
+  border-radius: 0.375rem;
+  transition: 0.5s;
+}
+
+.gradient-btn:hover {
+  background-position: right center;
 }
 
 .gradient-01 {
