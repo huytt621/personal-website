@@ -20,22 +20,26 @@ export const navVariants = {
 }
 
 export const sidebarVariants = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+  hidden: {
     transition: {
-      type: 'spring',
-      stiffness: 20,
-      restDelta: 2,
+      staggerChildren: 0.2,
+      staggerDirection: -1,
     },
-  }),
-  closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+  },
+  show: {
     transition: {
-      delay: 0.5,
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
+      staggerChildren: 0.2,
+      staggerDirection: 1,
     },
+  },
+}
+
+export const itemVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
   },
 }
 

@@ -4,13 +4,14 @@ import { motion } from 'framer-motion'
 
 import styles from '../styles'
 import { navVariants } from '../utils/motion'
+import Sidebar from './Sidebar'
 
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
     initial='hidden'
     whileInView='show'
-    className={`${styles.xPaddings} py-8 relative`}
+    className={`${styles.xPaddings} py-8 flex relative`}
   >
     <div
       className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
@@ -18,11 +19,6 @@ const Navbar = () => (
       <h2 className='font-extrabold text-[24px] leading-[30px] text-primary-white'>
         HT
       </h2>
-      <img
-        src='/menu.svg'
-        alt='menu'
-        className='w-[24px] h-[24px] object-contain md:hidden block'
-      />
       <ul className='md:flex hidden font-light font-mono text-primary-white'>
         <li className='p-2.5 transition duration-200 hover:text-secondary-white'>
           <a href='#'>About</a>
@@ -40,6 +36,7 @@ const Navbar = () => (
           <li>Resume</li>
         </a>
       </ul>
+      <Sidebar />
     </div>
   </motion.nav>
 )
