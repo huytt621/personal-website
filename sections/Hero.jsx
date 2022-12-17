@@ -6,7 +6,7 @@ import styles from '../styles'
 import { slideIn, staggerContainer, textVariant } from '../utils/motion'
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className={`${styles.yPaddings} xl:px-48 sm:px-24 px-8 flex`}>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
@@ -14,19 +14,56 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className='flex justify-center items-center flex-col relative z-10'>
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Software
+      <div className='flex justify-center items-start flex-col relative z-10'>
+        <motion.h1
+          variants={textVariant(1.1)}
+          className={`${styles.heroGreeting} gradient-text`}
+        >
+          Hi! My name is
         </motion.h1>
         <motion.h1
           variants={textVariant(1.2)}
-          className={`${styles.heroHeading} flex flex-row justify-center items-center`}
+          className={`${styles.heroHeading} text-primary-white`}
         >
-          Engineer
+          Huy Tran.
         </motion.h1>
+        <motion.h1
+          variants={textVariant(1.3)}
+          className={`${styles.heroHeading} text-primary-white`}
+        >
+          I make software.
+        </motion.h1>
+        <motion.p
+          variants={textVariant(1.4)}
+          className='max-w-xl mt-[12px] font-normal sm:text-[20px] text-[16px] text-secondary-white'
+        >
+          I'm a third year student at{' '}
+          <span className='font-semibold text-primary-white'>UC Berkeley</span>{' '}
+          majoring in Computer Science and Data Science. My academic interests
+          lie in{' '}
+          <span className='font-semibold text-primary-white'>Algorithms</span>,{' '}
+          <span className='font-semibold text-primary-white'>
+            Distributed Systems
+          </span>
+          , and{' '}
+          <span className='font-semibold text-primary-white'>
+            Cloud Computing
+          </span>
+          . This past summer, I worked as a{' '}
+          <span className='font-semibold text-primary-white'>
+            Full Stack Software Engineer
+          </span>{' '}
+          for the Confluence Collaboration team at{' '}
+          <span className='font-semibold text-primary-white'>Atlassian</span>.{' '}
+          {/*My task*/}
+          {/* was to leverage reactive architecture to develop a responsive and
+          scalable notifications microservice. Specifically, I created a new API
+          to query for email notification preferences and modernized the user
+          settings page for Confluence Cloud. */}
+        </motion.p>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className='relative w-full md:-mt-[20px] -mt-[12px]'
       >
@@ -46,7 +83,7 @@ const Hero = () => (
             />
           </div>
         </a>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   </section>
 )

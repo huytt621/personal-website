@@ -6,8 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: 'Eudoxus Sans', sans-serif;
   scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-01 {
