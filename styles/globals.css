@@ -16,6 +16,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-entry {
+  background-image: linear-gradient(to right, #439cfb 0%, #f187fb 51%, #439cfb);
+  background-size: 50% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
+
+.gradient-entry:hover {
+  background-position: right center;
+}
+
 .gradient-btn {
   background-image: linear-gradient(to right, #439cfb 0%, #f187fb 51%, #439cfb);
   background-size: 200% auto;

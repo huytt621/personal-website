@@ -22,13 +22,13 @@ export const navVariants = {
 export const sidebarVariants = {
   hidden: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       staggerDirection: -1,
     },
   },
   show: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       staggerDirection: 1,
     },
   },

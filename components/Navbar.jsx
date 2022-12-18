@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { RxCode } from 'react-icons/rx'
 
 import styles from '../styles'
 import { navVariants } from '../utils/motion'
@@ -17,7 +18,7 @@ const Navbar = () => (
       className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
     >
       <h2 className='font-extrabold text-[24px] leading-[30px] text-primary-white'>
-        HT
+        <RxCode className='w-[42px] h-[42px]' />
       </h2>
       <ul className='md:flex hidden font-light font-mono text-primary-white'>
         <li className='p-2.5 transition duration-200 hover:text-secondary-white'>
