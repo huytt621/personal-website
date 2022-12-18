@@ -15,9 +15,9 @@ const styles = {
 
   // hero section
   heroGreeting:
-    'font-light font-mono xl:text-[24px] sm:text-[18px] text-[14px] mb-[12px]',
+    'font-light font-mono lg:text-[24px] sm:text-[18px] text-[14px] mb-[12px]',
   heroHeading:
-    'font-bold xl:text-[100px] sm:text-[48px] text-[32px] xl:leading-[114.4px] sm:leading-[64.4px] leading-[44.4px]',
+    'font-bold lg:text-[76px] sm:text-[48px] text-[32px] lg:leading-[84.4px] sm:leading-[54.4px] leading-[36.4px]',
   heroDText:
     'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
 }

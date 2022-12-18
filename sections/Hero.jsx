@@ -6,7 +6,7 @@ import styles from '../styles'
 import { staggerContainer, textVariant } from '../utils/motion'
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} xl:px-48 sm:px-24 px-8 flex`}>
+  <section className={`${styles.yPaddings} lg:px-48 sm:px-20 px-8 flex`}>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
@@ -16,25 +16,25 @@ const Hero = () => (
     >
       <div className='flex justify-center items-start flex-col relative z-10'>
         <motion.h1
-          variants={textVariant(1.1)}
+          variants={textVariant(0.1)}
           className={`${styles.heroGreeting} gradient-text`}
         >
           Hi! My name is
         </motion.h1>
         <motion.h1
-          variants={textVariant(1.2)}
+          variants={textVariant(0.2)}
           className={`${styles.heroHeading} text-primary-white`}
         >
           Huy Tran.
         </motion.h1>
         <motion.h1
-          variants={textVariant(1.3)}
+          variants={textVariant(0.3)}
           className={`${styles.heroHeading} text-primary-white`}
         >
           I make software.
         </motion.h1>
         <motion.p
-          variants={textVariant(1.4)}
+          variants={textVariant(0.4)}
           className='max-w-xl mt-[12px] font-normal sm:text-[20px] text-[16px] text-secondary-white'
         >
           I'm a third year student at{' '}

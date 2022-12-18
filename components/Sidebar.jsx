@@ -41,8 +41,8 @@ const Sidebar = () => {
             ref={sidebarRef}
             initial={{ width: 0 }}
             animate={{ width: 'min(75vw, 400px)' }}
-            exit={{ width: 0, transition: { delay: 0, duration: 0.3 } }}
-            className='bg-primary-black h-screen w-[18.75rem] fixed inset-y-0 right-0 top-0 z-20 flex flex-col'
+            exit={{ width: 0, transition: { delay: 0, duration: 0.2 } }}
+            className='bg-primary-black h-screen w-[18.75rem] fixed inset-y-0 right-0 top-0 z-20 flex flex-col md:hidden'
           >
             <motion.ul
               initial='hidden'
