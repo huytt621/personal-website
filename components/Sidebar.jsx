@@ -1,9 +1,11 @@
 'use client'
 
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 import { CgMenuRight, CgClose } from 'react-icons/cg'
 
 import { sidebarVariants, itemVariants } from '../utils/motion'
+import OutsideClick from '../utils/outsideClick'
 
 const links = [
   { name: 'About', to: '#', id: 1 },
@@ -14,11 +16,29 @@ const links = [
 
 const Sidebar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true)
+  const sidebarRef = useRef(null)
+  const outsideClick = OutsideClick(sidebarRef)
+
+  useEffect(() => {
+    if (outsideClick && isOpen) {
+      toggleOpen()
+    }
+  }, [outsideClick])
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
   return (
     <>
       <AnimatePresence>
         {isOpen && (
           <motion.aside
+            ref={sidebarRef}
             initial={{ width: 0 }}
             animate={{ width: 'min(75vw, 400px)' }}
             exit={{ width: 0, transition: { delay: 0, duration: 0.3 } }}
