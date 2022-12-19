@@ -21,7 +21,6 @@ const Page = () => {
       </div>
       <div className='relative'>
         <About />
-        <div className='gradient-03 z-0' />
         <Projects />
       </div>
       <div className='relative'>

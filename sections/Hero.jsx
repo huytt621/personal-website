@@ -6,7 +6,9 @@ import styles from '../styles'
 import { staggerContainer, textVariant } from '../utils/motion'
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} lg:px-48 sm:px-20 px-8 flex`}>
+  <section
+    className={`${styles.yPaddings} lg:px-48 sm:px-20 px-8 flex items-center`}
+  >
     <motion.div
       variants={staggerContainer}
       initial='hidden'
