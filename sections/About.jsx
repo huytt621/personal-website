@@ -18,29 +18,14 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title='| About Me' textStyles='text-center' />
+      <TypingText title='| About Me' textStyles='text-center mb-[40px]' />
       <div className='grid grid-cols-[2fr_3fr] gap-[50px] mt-[8px] justify-center'>
         <Avatar />
         <motion.p
           variants={fadeIn('up', 'tween', 0.2, 1)}
           className='font-normal sm:text-[16px] text-[12px] w-[510px] text-secondary-white justify-self-start'
         >
-          Hi! I'm <span className='font-semibold text-white'>Huy</span>. I'm a
-          third year student at UC Berkeley majoring in Computer Science and
-          Data Science. My academic interests lie in{' '}
-          <span className='font-semibold text-white'>
-            Algorithms, Distributed Systems, and Cloud Computing
-          </span>
-          . This past summer, I worked as a{' '}
-          <span className='font-semibold text-white'>
-            Full Stack Software Engineer
-          </span>{' '}
-          for the Confluence Collaboration team at{' '}
-          <span className='font-semibold text-white'>Atlassian</span>. My task
-          was to leverage reactive architecture to develop a responsive and
-          scalable notifications microservice. Specifically, I created a new API
-          to query for email notification preferences and modernized the user
-          settings page for Confluence Cloud.
+          Hello!
         </motion.p>
       </div>
       <motion.img
