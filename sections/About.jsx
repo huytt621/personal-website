@@ -21,13 +21,13 @@ const About = () => (
     >
       <TypingText title='| About Me' textStyles='text-center mb-[40px]' />
       <div className='lg:grid lg:grid-cols-[2fr_3fr] lg:gap-[50px] lg:items-start justify-center flex flex-col-reverse items-center'>
-        <motion.div variants={slideIn('left', 'tween', 0.2, 1)}>
+        <motion.div variants={slideIn('left', 'tween', 0.1, 1)}>
           <Avatar />
         </motion.div>
         <div>
           {aboutMe.map((paragraph, index) => (
             <motion.p
-              variants={fadeIn('up', 'tween', 0.2 * index, 1)}
+              variants={fadeIn('up', 'tween', 0.1 * index, 1)}
               className='font-normal sm:text-[16px] text-[14px] lg:max-w-[510px] text-secondary-white justify-self-start mb-[15px]'
               key={index}
             >
@@ -35,13 +35,13 @@ const About = () => (
             </motion.p>
           ))}
           <motion.p
-            variants={fadeIn('up', 'tween', 0.2 * aboutMe.length, 1)}
+            variants={fadeIn('up', 'tween', 0.1 * aboutMe.length, 1)}
             className='font-normal sm:text-[16px] text-[14px] lg:max-w-[510px] text-secondary-white justify-self-start mb-[15px]'
           >
             Here are some of my awards and honors:
           </motion.p>
           <motion.ul
-            variants={fadeIn('up', 'tween', 0.2 * (aboutMe.length + 1), 1)}
+            variants={fadeIn('up', 'tween', 0.1 * (aboutMe.length + 1), 1)}
             className='font-mono sm:text-[14px] text-[12px] lg:max-w-[510px] text-secondary-white justify-self-start list-disc list-inside'
           >
             {awardsAndHonors.map((item, index) => (
@@ -49,7 +49,7 @@ const About = () => (
                 variants={fadeIn(
                   'up',
                   'tween',
-                  0.2 * (aboutMe.length + 2 + index),
+                  0.1 * (aboutMe.length + 2 + index),
                   1
                 )}
                 className='mb-[10px]'
