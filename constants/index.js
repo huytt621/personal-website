@@ -109,3 +109,27 @@ export const socials = [
     url: '/facebook.svg',
   },
 ]
+
+export const aboutMe = [
+  "What's up! I'm Huy. I'm a Bay Area native, born and raised in Sunnyvale. Having been in the heart of the Silicon Valley for my entire life, many people assume I started coding since I was six. In reality, I would consider myself a bit of a late bloomer, never having written a real line of code until I was sixteen years old!",
+  "Who would've thought that a few years later, I'd be a Computer Science and Data Science major at UC Berkeley. Professionally, I'm a full stack software engineer, having worked on Confluence Cloud at Atlassian this past summer. Although I do have frontend skills, I'm hoping to transition to backend only roles after discovering my passions in distributed systems and cloud computing.",
+  "In my free time, you can find me at a track, spiked up to sprint down the straight or jump into a sand pit. I was a track athlete in high school, competing in the sprints (100m, 200m, 4x100m relay) and jumps (long jump, triple jump). Nowadays, I just run recreationally, but I do hope to compete in all-comers meets in the future to see how much I've improved since then!",
+]
+
+export const awardsAndHonors = [
+  {
+    name: 'Upsilon Pi Epsilon',
+    description:
+      'Top third of Computer Science majors at UC Berkeley by GPA (minimum GPA of 3.8)',
+  },
+  {
+    name: 'Jim and Donna Gray Endowment Award',
+    description:
+      'Annual award for seven UC Berkeley Computer Science majors completing their junior year who have demonstrated high scholastic achievement',
+  },
+  {
+    name: 'Honors to Date (Highest Distinction)',
+    description:
+      'Cumulative GPA equivalent to that required for Distinction in General Scholarship (Highest Distinction)',
+  },
+]

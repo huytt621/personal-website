@@ -14,7 +14,7 @@ import {
 
 const Page = () => {
   return (
-    <div className='bg-night overflow-hidden'>
+    <div className='bg-night overflow-hidden font-sans'>
       <div className='h-screen'>
         <Navbar />
         <Hero />

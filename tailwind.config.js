@@ -9,6 +9,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'Eudoxus Sans, sans-serif'
+      },
       colors: {
         night: '#1a1b26',
         'primary-black': '#24283b',
