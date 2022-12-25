@@ -3,12 +3,13 @@
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { CgMenuRight, CgClose } from 'react-icons/cg'
+import { Link } from 'react-scroll'
 
 import { sidebarVariants, itemVariants } from '../utils/motion'
 import OutsideClick from '../utils/outsideClick'
 
 const links = [
-  { name: 'About', to: '#', id: 1 },
+  { name: 'About', to: 'about', id: 1 },
   { name: 'Experience', to: '#', id: 2 },
   { name: 'Projects', to: '#', id: 3 },
   { name: 'Contact', to: '#', id: 4 },
@@ -57,7 +58,17 @@ const Sidebar = () => {
                   variants={itemVariants}
                   className='p-5 cursor-pointer transition duration-200 hover:text-secondary-white'
                 >
-                  <a href={to}>{name}</a>
+                  <Link
+                    activeClass='active'
+                    to={to}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1}
+                    onClick={toggleOpen}
+                  >
+                    {name}
+                  </Link>
                 </motion.li>
               ))}
               <motion.li

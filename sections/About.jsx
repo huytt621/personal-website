@@ -11,6 +11,7 @@ import { aboutMe, awardsAndHonors } from '../constants'
 const About = () => (
   <section
     className={`${styles.paddings} lg:px-48 sm:px-20 px-8 relative z-10 h-screen`}
+    id='about'
   >
     <motion.div
       variants={staggerContainer}
@@ -53,6 +54,7 @@ const About = () => (
                   1
                 )}
                 className='mb-[10px]'
+                key={index}
               >{`${item.name}`}</motion.li>
             ))}
           </motion.ul>
