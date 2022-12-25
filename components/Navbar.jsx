@@ -48,7 +48,7 @@ const Navbar = () => {
           <li className='p-2.5 transition duration-200 hover:text-secondary-white'>
             <a href='#'>Contact</a>
           </li>
-          <a href='#' className='p-2.5 ml-4 gradient-btn text-white'>
+          <a href='/resume.pdf' className='p-2.5 ml-4 gradient-btn text-white'>
             <li>Resume</li>
           </a>
         </ul>

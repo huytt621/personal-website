@@ -75,7 +75,7 @@ const Sidebar = () => {
                 variants={itemVariants}
                 className='p-5 cursor-pointer gradient-entry'
               >
-                <a href='#'>Resume</a>
+                <a href='/resume.pdf'>Resume</a>
               </motion.li>
             </motion.ul>
           </motion.aside>
