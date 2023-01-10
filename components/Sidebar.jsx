@@ -83,7 +83,11 @@ const Sidebar = () => {
       </AnimatePresence>
       <div className='p-2 z-30 text-primary-white cursor-pointer md:hidden'>
         {isOpen ? (
-          <CgClose className='w-[30px] h-[30px]' onClick={toggleOpen} />
+          <CgClose className='w-[30px] h-[30px]' onClick={() => {
+            // Needs to toggle two times to actually close for some reason
+            toggleOpen()
+            toggleOpen()
+          }} />
         ) : (
           <CgMenuRight className='w-[30px] h-[30px]' onClick={toggleOpen} />
         )}

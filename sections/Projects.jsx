@@ -11,7 +11,7 @@ import { projects } from '../constants'
 const Projects = () => {
   const [active, setActive] = useState('gitlet')
   return (
-    <section className={`${styles.paddings}`} id='explore'>
+    <section className={`${styles.paddings} h-screen`} id='explore'>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
